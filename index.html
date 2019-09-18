@@ -6,16 +6,42 @@
 -->
 <html>
 	<head>
-		<title>My page</title>
+		<title>Raigo's site</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://api.salemove.com/salemove_integration.js"></script>
+		<script>
+window.onload = function() {
+  sm.getApi({
+    version: 'v1'
+  }).then(function(salemove) {
+    salemove.updateInformation({
+      phone: '+11111111',
+      name: 'Papa Grande Smurf',
+      email: 'raigo.kodasmaa@glia.com',
+      externalId: '',
+      customAttributes: {
+        customAttribute: 'superCustomAttribute'
+      }
+    }).then(function() {
+      console.log('Visitor information updated');
+    }).catch(function(error) {
+      if (error.cause == salemove.ERRORS.NETWORK_TIMEOUT) {
+
+      } else {
+
+      }
+    });
+  });
+};
+</script>
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">Hielo <span>by TEMPLATED</span></a></div>
+				<div class="logo"><a href="index.html">Glia <span>by TEMPLATED</span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
