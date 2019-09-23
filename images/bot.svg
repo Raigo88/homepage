@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="17.3952133%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D83AFE" offset="0%"></stop>
+            <stop stop-color="#8822EE" offset="100%"></stop>
+        </linearGradient>
+        <path d="M8,0 L72,0 C76.418278,-8.11624501e-16 80,3.581722 80,8 L80,72 C80,76.418278 76.418278,80 72,80 L8,80 C3.581722,80 5.41083001e-16,76.418278 0,72 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="path-2"></path>
+        <path d="M47.5085833,36.5710927 C47.5116671,36.5701974 47.5145306,36.5695259 47.5176145,36.5686307 L51.6367246,52.1896313 C48.9198741,52.9293531 46.1523608,52.1323336 44.2205642,50.3218616 C41.3153801,53.8960274 36.9319421,56.172043 32.0279983,56.172043 C23.2811672,56.172043 16.1905707,48.9314978 16.1905707,40 C16.1905707,31.0685022 23.2811672,23.827957 32.0279983,23.827957 C39.6223598,23.827957 45.9684326,29.286679 47.5085833,36.5710927 Z M24.1091744,40 C24.1091744,44.465637 27.6546929,48.0859096 32.0279983,48.0859096 C36.4013038,48.0859096 39.946602,44.465637 39.946602,40 C39.946602,35.534363 36.4013038,31.9140904 32.0279983,31.9140904 C27.6546929,31.9140904 24.1091744,35.534363 24.1091744,40 Z M62.4517393,47.2226858 L64.516129,54.9882261 C60.2822646,56.1318275 55.9256538,53.5820349 54.7856144,49.293363 L50.6570557,33.7620598 L48.5928867,25.9962969 C52.8265304,24.8529181 57.1831411,27.4027106 58.3231806,31.691605 L62.4517393,47.2226858 Z" id="path-4"></path>
+        <filter x="-9.9%" y="-13.0%" width="120.2%" height="132.3%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0777287138 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="CVI-explorations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Platform-Icons" transform="translate(-1469.000000, -708.000000)">
+            <g id="Group-16" transform="translate(1469.000000, 708.000000)">
+                <g id="Group-27">
+                    <g id="Screen-Shot-2018-06-01-at-17.54.17">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        <g id="Combined-Shape" mask="url(#mask-3)">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

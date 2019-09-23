@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Screen Shot 2018-06-01 at 17.54.17 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="40.4575893%" y1="18.6035156%" x2="40.4575893%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#49E7B0" offset="0%"></stop>
+            <stop stop-color="#00C2CA" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4,0 L36,0 C38.209139,-4.05812251e-16 40,1.790861 40,4 L40,36 C40,38.209139 38.209139,40 36,40 L4,40 C1.790861,40 2.705415e-16,38.209139 0,36 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-2"></path>
+        <path d="M18.3453386,13.8485095 C18.3448957,13.8469537 18.3445635,13.845509 18.3441207,13.8439533 L26.0715305,11.7658892 C26.4374568,13.1365225 26.0431865,14.5327149 25.1475806,15.5072936 C26.915652,16.97294 28.0415534,19.1843558 28.0415534,21.6583634 C28.0415534,26.0710825 24.4597943,29.6482421 20.0415534,29.6482421 C15.6233124,29.6482421 12.0415534,26.0710825 12.0415534,21.6583634 C12.0415534,17.8270577 14.7418786,14.6255054 18.3453386,13.8485095 M19.9555319,25.5215453 C22.1408738,25.5215453 23.9125211,23.7508482 23.9125211,21.5667391 C23.9125211,19.3826301 22.1408738,17.612043 19.9555319,17.612043 C17.7701899,17.612043 15.9985426,19.3826301 15.9985426,21.5667391 C15.9985426,23.7508482 17.7701899,25.5215453 19.9555319,25.5215453" id="path-4"></path>
+        <filter x="-21.9%" y="-25.2%" width="143.8%" height="139.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0777287138 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Screen-Shot-2018-06-01-at-17.54.17-2">
+            <g id="Screen-Shot-2018-06-01-at-17.54.17">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            </g>
+            <g id="Fill-1" transform="translate(20.041553, 20.707066) rotate(-165.000000) translate(-20.041553, -20.707066) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+            </g>
+        </g>
+    </g>
+</svg>
