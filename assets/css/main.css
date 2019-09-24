@@ -3742,8 +3742,8 @@
 
 			#header > .logo span {
 				font-weight: 400;
-				font-size: 1em;
-				color: rgba(255, 255, 255, 0.65);
+				font-size: 0.9em;
+				color: rgbaź(255, 255, 255, 0.65);
 			}
 
 		#header > a {
