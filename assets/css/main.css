@@ -3,8 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 
 /*
-	Hielo by TEMPLATED
-	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
@@ -16,7 +14,7 @@
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline;
+		vertical-align: middle;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -3744,7 +3742,7 @@
 
 			#header > .logo span {
 				font-weight: 400;
-				font-size: .8em;
+				font-size: 1em;
 				color: rgba(255, 255, 255, 0.65);
 			}
 
