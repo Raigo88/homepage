@@ -35,12 +35,18 @@ window.onload = function() {
   });
 };
 </script>
+<script>
+function showVisitorCode() {
+  var code = document.createElement("sm-visitor-code");
+  document.body.appendChild(code);
+}
+</script>
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo" s><span>Digital-First Customer Conversations by  <img src="images/glia_white.png" /></span></div>
+				<div class="logo" s><span>Digital-First Customer Conversations by  <img src="images/glia_white.png" onclick "startOmniBrowse()" /></span></div>
 				<a href="#menu">Menu</a>
 			</header>
 
