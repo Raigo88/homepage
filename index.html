@@ -16,24 +16,21 @@ window.onload = function() {
     version: 'v1'
   }).then(function(salemove) {
     salemove.updateInformation({
-      phone: '+11111111',
-      name: 'Raigo Kodasmaa',
-      email: 'raigo.kodasmaa@glia.com',
-      customAttributes: {
-	currentCompany: 'Glia',
-        currentPosition: 'Client Engineer',
-	lengthOfService: '1 year',
-	previousCompany: 'Playtech',
-	pastExperience:
-	[
-	'Client QA Specialist',
-	'Client Delivery Manager'
-	],
-	personality: 'Ладна',
-	hobbies: 'sports',
-	age: '31',
-	kids: '2',
-	wife: '1',
+      'phone': '+11111111',
+      'name': 'Raigo Kodasmaa',
+      'email': 'raigo.kodasmaa@glia.com',
+      'customAttributes: {
+	'currentCompany': 'Glia',
+        'currentPosition': 'Client Engineer',
+	'lengthOfService': '1 year',
+	'previousCompany': 'Playtech',
+	'pastExperience1': 'Client QA Specialist',
+	'pastExperience2': 'Client Delivery Manager',
+	'personality': 'Ладна',
+	'hobbies': 'sports',
+	'age': '31',
+	'kids': '2',
+	'wife': '1',
       }
     }).then(function() {
       console.log('Visitor information updated');
