@@ -11,20 +11,19 @@
 		<link rel="shortcut icon" type="image/png" href="favicon_glia.png"/>
 		<script async src="//api.salemove.com/salemove_integration.js"></script>
 		<script>
-attr = JSON.stringify({
-  "customAttributes": {
-  "attributeOne": "111",
-  "attributeTwo": "Abc"
+ function getGliaCustomAttributes() {
+  attributes = {'customAttributes': {
+  'attributeOne': '1112',
+  'attributeTwo': 'Abc3'
   }
-});
-
-error = JSON.stringify({
-  "cause": "internal error"
-});
+  };
+  return attributes;
+}
 
 function updateInfo() {
   try {
-    var attr = getGliaCustomAttributes();
+  attr = getGliaCustomAttributes(); 
+    console.log(attr);
     if (sm) {
       sm.getApi(
         {
@@ -32,12 +31,10 @@ function updateInfo() {
         }
       ).then(function(salemove) {
         salemove.updateInformation(attr).then(function()
-
           { //Callback fired after the Visitor Information has been successfully updated                    
             console.log("info updated to glia.");
           }
         ).catch(function(error)
-
           { //Callback fired when the request for updating the Visitor Information fails                    
             console.error("error updating info to glia. " + error);
           }
@@ -45,13 +42,13 @@ function updateInfo() {
       });
     }
   } catch (err)
-
   {
     console.error('error while doing glia update: ' + err);
   } finally {
-
   }
-}			
+}
+
+updateInfo();	
 </script>
 	</head>
 	<body>
