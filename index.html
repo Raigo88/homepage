@@ -11,27 +11,46 @@
 		<link rel="shortcut icon" type="image/png" href="favicon_glia.png"/>
 		<script async src="//api.salemove.com/salemove_integration.js"></script>
 		<script>
-window.onload = function() {
-  sm.getApi({
-    version: 'v1'
-  }).then(function(salemove) {
-    salemove.updateInformation({
-	'name': 'Papa Grande Smurf',
-	'email': 'raigo.kodasmaa@glia.com',
-	'phone': '',
-      'customAttributes': {
-      }
-    }).then(function() {
-      console.log('Visitor information updated');
-    }).catch(function(error) {
-      if (error.cause == salemove.ERRORS.NETWORK_TIMEOUT) {
+JSON.stringify(attr) {
+  "customAttributes":
+  "attributeOne":"111",
+  "attributeTwo":"Abc"
+}
 
-      } else {
+JSON.stringify(error) {
+  "cause": "internal error"
+}
 
-      }
-    });
-  });
-};
+function updateInfo() {
+  try {
+    var attr = getGliaCustomAttributes();
+    if (sm) {
+      sm.getApi(
+        {
+          version: 'v1'
+        }
+      ).then(function(salemove) {
+        salemove.updateInformation(attr).then(function()
+
+          { //Callback fired after the Visitor Information has been successfully updated                    
+            console.log("info updated to glia.");
+          }
+        ).catch(function(error)
+
+          { //Callback fired when the request for updating the Visitor Information fails                    
+            console.error("error updating info to glia. " + error);
+          }
+        );
+      });
+    }
+  } catch (err)
+
+  {
+    console.error('error while doing glia update: ' + err);
+  } finally {
+
+  }
+}			
 </script>
 	</head>
 	<body>
