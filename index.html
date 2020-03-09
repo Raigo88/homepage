@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" type="image/png" href="favicon_glia.png"/>
 		<script>
-			var installSaleMove=function(a){
+var installSaleMove=function(a){
   !function(a,b,c,d){
     var e = a.createElement(b),
         f = a.getElementsByTagName(b)[0];
@@ -22,42 +22,26 @@
   }
   (document,"script","https://api.salemove.com/salemove_integration.js",a)
 };
-   
- function getGliaCustomAttributes() {
-  attributes = {'customAttributes': {
-  'attributeOne': '1112',
-  'attributeTwo': 'Abc3'
-  }
-  };
-  return attributes;
-}
 installSaleMove(function(){
-  try {
-  attr = getGliaCustomAttributes(); 
-    console.log(attr);
-    if (sm) {
-      sm.getApi(
-        {
-          version: 'v1'
-        }
-      ).then(function(salemove) {
-        salemove.updateInformation(attr).then(function()
-          { //Callback fired after the Visitor Information has been successfully updated                    
-            console.log("info updated to glia.");
-          }
-        ).catch(function(error)
-          { //Callback fired when the request for updating the Visitor Information fails                    
-            console.error("error updating info to glia. " + error);
-          }
-        );
-      });
-    }
-  } catch (err)
-  {
-    console.error('error while doing glia update: ' + err);
-  } finally {
-  }
-}
+   sm.getApi({version: 'v1'}).then(function(salemove) {
+salemove.updateInformation({
+      phone: '+10000000000',
+      email: "An Email",
+      name: "A Name",
+      externalId: "An External ID",
+      customAttributes: {
+        Attribute1: "Value 1",
+        Attribute1: "Value 2"
+      }
+    }).then(function() {
+        //Callback fired after the Visitor Information has
+        //been successfully updated
+    }).catch(function(error) {
+        //Callback fired when the request for updating the
+        //Visitor Information fails
+    });
+  });
+});
 </script>
 	</head>
 	<body>
