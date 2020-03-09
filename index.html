@@ -9,8 +9,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" type="image/png" href="favicon_glia.png"/>
-		<script async src="//api.salemove.com/salemove_integration.js"></script>
 		<script>
+			var installSaleMove=function(a){
+  !function(a,b,c,d){
+    var e = a.createElement(b),
+        f = a.getElementsByTagName(b)[0];
+    e.async=1,
+    e.src=c,
+    e.type="text/javascript",
+    d&&e.addEventListener("load",d),
+    f.parentNode.insertBefore(e,f)
+  }
+  (document,"script","https://api.salemove.com/salemove_integration.js",a)
+};
+   
  function getGliaCustomAttributes() {
   attributes = {'customAttributes': {
   'attributeOne': '1112',
@@ -19,8 +31,7 @@
   };
   return attributes;
 }
-
-function updateInfo() {
+installSaleMove(function(){
   try {
   attr = getGliaCustomAttributes(); 
     console.log(attr);
@@ -47,8 +58,6 @@ function updateInfo() {
   } finally {
   }
 }
-
-window.onload = updateInfo();	
 </script>
 	</head>
 	<body>
