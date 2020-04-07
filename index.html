@@ -26,12 +26,12 @@ installSaleMove(function(){
    sm.getApi({version: 'v1'}).then(function(salemove) {
 salemove.updateInformation({
       phone: '+10000000000',
-      email: "An Email",
-      name: "A Name",
-      externalId: "An External ID",
+      email: "lova@lova.com",
+      name: "Mr. Lova Lova",
       customAttributes: {
         Attribute1: "Value 1",
-        Attribute2: ""
+        Attribute2: "",
+        Attribute3: null
       }
     }).then(function() {
         //Callback fired after the Visitor Information has
