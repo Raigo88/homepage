@@ -1,45 +1,34 @@
 <!DOCTYPE HTML>
 <!--
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-	<head>
-		<title>Raigo's site</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" type="image/png" href="favicon_glia.png"/>
-		<script>
-var installSaleMove=function(a){
-  !function(a,b,c,d){
-    var e = a.createElement(b),
-        f = a.getElementsByTagName(b)[0];
-    e.async=1,
-    e.src=c,
-    e.type="text/javascript",
-    d&&e.addEventListener("load",d),
-    f.parentNode.insertBefore(e,f)
-  }
-  (document,"script","https://api.glia.com/salemove_integration.js",a)
-};
-installSaleMove(function(){
-   
-});
-</script>
-	</head>
-	<body>
-                <iframe style="width: 100%; height: 100%;" src="https://myestimatortst.baycare.org/website/">
-		sm.getApi({version: 'v1'}).then(function(salemove) {
-  salemove.updateInformation({
-    customAttributes: {
-      EstimateID: '123'
-    }
-  }).then(function() {
-    console.log('success');
-  }).catch(function(error) {
-    console.log('failure');
-  });
-});
-		</iframe>
+<head>
+	<title>Raigo's site</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" type="image/png" href="favicon_glia.png"/>
+	<script>
+		var installSaleMove=function(a){
+			!function(a,b,c,d){
+				var e = a.createElement(b),
+				f = a.getElementsByTagName(b)[0];
+				e.async=1,
+				e.src=c,
+				e.type="text/javascript",
+				d&&e.addEventListener("load",d),
+				f.parentNode.insertBefore(e,f)
+			}
+			(document,"script","https://api.glia.com/salemove_integration.js",a)
+		};
+		installSaleMove(function(){
+			
+		});
+	</script>
+</head>
+<body>
+	<iframe style="width: 100%; height: 100%;" src="https://myestimatortst.baycare.org/website/">
+	</iframe>
 </body>
 </html>
