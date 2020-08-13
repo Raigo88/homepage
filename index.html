@@ -1,199 +1,196 @@
 <!DOCTYPE HTML>
 <!--
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+   Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+   -->
 <html>
-	<head>
-		<title>Raigo's site</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" type="image/png" href="favicon_glia.png"/>
-		<script src="https://api.salemove.com/salemove_integration.js"></script>
-		<script>
-window.onload = function() {
-  sm.getApi({
-    version: 'v1'
-  }).then(function(salemove) {
-    salemove.updateInformation({
-      phone: '+11111111',
-      name: 'Papa Smurf',
-      email: 'raigo.kodasmaa@glia.com',
-      externalId: '',
-      customAttributes: {
-        customAttribute: 'superCustomAttribute'
-      }
-    }).then(function() {
-      console.log('Visitor information updated');
-    }).catch(function(error) {
-      if (error.cause == salemove.ERRORS.NETWORK_TIMEOUT) {
-
-      } else {
-
-      }
-    });
-  });
-};
-</script>
-	</head>
-	<body>
-
-		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo" s><span>Digital-First Customer Conversations by  <img src="images/glia_white.png" /></span></div>
-				<a href="#menu">Menu</a>
-			</header>
-		
-		<h2>Testing</h2>
-
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
-				</ul>
-			</nav>
-
-		<!-- Banner -->
-			<section class="banner full">
-				<article>
-					<img src="images/slide01.jpg" alt="" />
-					<div class="inner">
-						<header>
-							<p>Your customers will love you</p>
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/slide02.jpg" alt="" />
-					<div class="inner">
-						<header>
-							<p>Your agents will love you</p>
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/slide03.jpg"  alt="" />
-					<div class="inner">
-						<header>
-							<p>Your bots will love you (if they could)</p>
-						</header>
-					</div>
-				</article>
-			</section>
-
-		<!-- One -->
-			<section id="one" class="wrapper style2">
-				<div class="inner">
-					<div class="grid-style">
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic01.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<p>Because texting is cool</p>
-										<h2>Chat</h2>
-									</header>
-									<p>Bla bla bla</p>
-									<footer class="align-center">
-										<a href="#" class="button alt">Learn More</a>
-									</footer>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic02.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<p>Because audio is cool</p>
-										<h2>Audio</h2>
-									</header>
-									<p>Bla bla bla</p>
-									<footer class="align-center">
-										<a href="#" class="button alt">Learn More</a>
-									</footer>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic03.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<p>Because calling is cool</p>
-										<h2>Phone</h2>
-									</header>
-									<p>Bla bla bla</p>
-									<footer class="align-center">
-										<a href="#" class="button alt">Learn More</a>
-									</footer>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic04.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<p>Because watching is cool</p>
-										<h2>Video</h2>
-									</header>
-									<p>Bla bla bla</p>
-									<footer class="align-center">
-										<a href="#" class="button alt">Learn More</a>
-									</footer>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Seamless On-Screen Experiences</p>
-						<h2>CoBrowsing</h2>
-					</header>
-				</div>
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<li><img src="images/chat.svg"/><span class="label"></span></a></li>
-						<li><img src="images/audio.svg"/><span class="label"></span></a></li>
-						<li><img src="images/video.svg"/><span class="label"></span></a></li>
-						<li><img src="images/bot.svg"/><span class="label"></span></a></li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Glia's testing page. No rights reserved.
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+   <head>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-NDHVM6H');
+      </script>
+      <!-- End Google Tag Manager -->
+      <title>Raigo's site</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link rel="shortcut icon" type="image/png" href="favicon_glia.png"/>
+      <script src="https://api.salemove.com/salemove_integration.js"></script>
+      <script>
+         window.onload = function() {
+         	sm.getApi({
+         		version: 'v1'
+         	}).then(function(salemove) {
+         		salemove.updateInformation({
+         			phone: '+11111111',
+         			name: 'Papa Smurf',
+         			email: 'raigo.kodasmaa@glia.com',
+         			externalId: '',
+         			customAttributes: {
+         				customAttribute: 'superCustomAttribute'
+         			}
+         		}).then(function() {
+         			console.log('Visitor information updated');
+         		}).catch(function(error) {
+         			if (error.cause == salemove.ERRORS.NETWORK_TIMEOUT) {		
+         			} else {		
+         			}
+         		});
+         	});
+         };
+      </script>
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDHVM6H"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <!-- Header -->
+      <header id="header" class="alt">
+         <div class="logo" s><span>Digital-First Customer Conversations by  <img src="images/glia_white.png" /></span></div>
+         <a href="#menu">Menu</a>
+      </header>
+      <h2>Testing</h2>
+      <!-- Nav -->
+      <nav id="menu">
+         <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generic.html">Generic</a></li>
+            <li><a href="elements.html">Elements</a></li>
+         </ul>
+      </nav>
+      <!-- Banner -->
+      <section class="banner full">
+         <article>
+            <img src="images/slide01.jpg" alt="" />
+            <div class="inner">
+               <header>
+                  <p>Your customers will love you</p>
+               </header>
+            </div>
+         </article>
+         <article>
+            <img src="images/slide02.jpg" alt="" />
+            <div class="inner">
+               <header>
+                  <p>Your agents will love you</p>
+               </header>
+            </div>
+         </article>
+         <article>
+            <img src="images/slide03.jpg"  alt="" />
+            <div class="inner">
+               <header>
+                  <p>Your bots will love you (if they could)</p>
+               </header>
+            </div>
+         </article>
+      </section>
+      <!-- One -->
+      <section id="one" class="wrapper style2">
+         <div class="inner">
+            <div class="grid-style">
+               <div>
+                  <div class="box">
+                     <div class="image fit">
+                        <img src="images/pic01.jpg" alt="" />
+                     </div>
+                     <div class="content">
+                        <header class="align-center">
+                           <p>Because texting is cool</p>
+                           <h2>Chat</h2>
+                        </header>
+                        <p>Bla bla bla</p>
+                        <footer class="align-center">
+                           <a href="#" class="button alt">Learn More</a>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="box">
+                     <div class="image fit">
+                        <img src="images/pic02.jpg" alt="" />
+                     </div>
+                     <div class="content">
+                        <header class="align-center">
+                           <p>Because audio is cool</p>
+                           <h2>Audio</h2>
+                        </header>
+                        <p>Bla bla bla</p>
+                        <footer class="align-center">
+                           <a href="#" class="button alt">Learn More</a>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="box">
+                     <div class="image fit">
+                        <img src="images/pic03.jpg" alt="" />
+                     </div>
+                     <div class="content">
+                        <header class="align-center">
+                           <p>Because calling is cool</p>
+                           <h2>Phone</h2>
+                        </header>
+                        <p>Bla bla bla</p>
+                        <footer class="align-center">
+                           <a href="#" class="button alt">Learn More</a>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="box">
+                     <div class="image fit">
+                        <img src="images/pic04.jpg" alt="" />
+                     </div>
+                     <div class="content">
+                        <header class="align-center">
+                           <p>Because watching is cool</p>
+                           <h2>Video</h2>
+                        </header>
+                        <p>Bla bla bla</p>
+                        <footer class="align-center">
+                           <a href="#" class="button alt">Learn More</a>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Two -->
+      <section id="two" class="wrapper style3">
+         <div class="inner">
+            <header class="align-center">
+               <p>Seamless On-Screen Experiences</p>
+               <h2>CoBrowsing</h2>
+            </header>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer id="footer">
+         <div class="container">
+            <ul class="icons">
+               <li><img src="images/chat.svg"/><span class="label"></span></a></li>
+               <li><img src="images/audio.svg"/><span class="label"></span></a></li>
+               <li><img src="images/video.svg"/><span class="label"></span></a></li>
+               <li><img src="images/bot.svg"/><span class="label"></span></a></li>
+            </ul>
+         </div>
+         <div class="copyright">
+            &copy; Glia's testing page. No rights reserved.
+         </div>
+      </footer>
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>		
+   </body>
 </html>
