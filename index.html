@@ -48,9 +48,8 @@
          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
       <!-- Header -->
-      <header id="header" class="alt">
-         <div class="logo" s><span>Digital-First Customer Conversations by  <img src="images/glia_white.png" /></span>
-         var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+      function testing() {
+               var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 
 var xhr = new XMLHttpRequest();
 
@@ -76,10 +75,9 @@ xhr.send(query);
 var response = JSON.parse(xhr.responseText);
 
 console.log(response);
-         
-         
-         
-         </div>
+      }
+      <header id="header" class="alt">
+         <div onclick="testing()" class="logo" s><span>Digital-First Customer Conversations by  <img src="images/glia_white.png" /></span></div>
          <a href="#menu">Menu</a>
       </header>
       <!-- Nav -->
