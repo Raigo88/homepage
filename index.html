@@ -49,7 +49,37 @@
       <!-- End Google Tag Manager (noscript) -->
       <!-- Header -->
       <header id="header" class="alt">
-         <div class="logo" s><span>Digital-First Customer Conversations by  <img src="images/glia_white.png" /></span></div>
+         <div class="logo" s><span>Digital-First Customer Conversations by  <img src="images/glia_white.png" /></span>
+         var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+
+var xhr = new XMLHttpRequest();
+
+xhr.open('POST', 'https://api.salemove.com/queue_tickets', false);
+
+xhr.setRequestHeader('authorization', 'Token A9HjXGWPfS-WtKziTpJL6w');
+xhr.setRequestHeader('accept', 'application/vnd.salemove.v1+json');
+xhr.setRequestHeader('content-type', 'application/json');
+
+var data = {
+  site_id: 'd2a59784-f5ff-4527-a35b-6d23aff0f85a',
+  source: 'hotlink',
+  media: 'video',
+  team_ids: [
+    'c4b9bfda-0a35-4d18-b876-2ea8786f7ac6'
+  ]
+};
+
+var query = JSON.stringify(data);
+
+xhr.send(query);
+
+var response = JSON.parse(xhr.responseText);
+
+console.log(response);
+         
+         
+         
+         </div>
          <a href="#menu">Menu</a>
       </header>
       <!-- Nav -->
