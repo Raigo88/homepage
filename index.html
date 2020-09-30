@@ -18,6 +18,34 @@
       <link rel="stylesheet" href="assets/css/main.css" />
       <link rel="shortcut icon" type="image/png" href="favicon_glia.png"/>
       <script async="" src="https://api.salemove.com/salemove_integration.js" type="text/javascript"></script>
+      <script>function testing() {
+               var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+
+var xhr = new XMLHttpRequest();
+
+xhr.open('POST', 'https://api.salemove.com/queue_tickets', false);
+
+xhr.setRequestHeader('authorization', 'Token A9HjXGWPfS-WtKziTpJL6w');
+xhr.setRequestHeader('accept', 'application/vnd.salemove.v1+json');
+xhr.setRequestHeader('content-type', 'application/json');
+
+var data = {
+  site_id: 'd2a59784-f5ff-4527-a35b-6d23aff0f85a',
+  source: 'hotlink',
+  media: 'video',
+  team_ids: [
+    'c4b9bfda-0a35-4d18-b876-2ea8786f7ac6'
+  ]
+};
+
+var query = JSON.stringify(data);
+
+xhr.send(query);
+
+var response = JSON.parse(xhr.responseText);
+
+console.log(response);
+      }</script>
       <script>
          window.onload = function() {
          	sm.getApi({
@@ -48,34 +76,6 @@
          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
       <!-- Header -->
-      function testing() {
-               var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
-
-var xhr = new XMLHttpRequest();
-
-xhr.open('POST', 'https://api.salemove.com/queue_tickets', false);
-
-xhr.setRequestHeader('authorization', 'Token A9HjXGWPfS-WtKziTpJL6w');
-xhr.setRequestHeader('accept', 'application/vnd.salemove.v1+json');
-xhr.setRequestHeader('content-type', 'application/json');
-
-var data = {
-  site_id: 'd2a59784-f5ff-4527-a35b-6d23aff0f85a',
-  source: 'hotlink',
-  media: 'video',
-  team_ids: [
-    'c4b9bfda-0a35-4d18-b876-2ea8786f7ac6'
-  ]
-};
-
-var query = JSON.stringify(data);
-
-xhr.send(query);
-
-var response = JSON.parse(xhr.responseText);
-
-console.log(response);
-      }
       <header id="header" class="alt">
          <div onclick="testing()" class="logo" s><span>Digital-First Customer Conversations by  <img src="images/glia_white.png" /></span></div>
          <a href="#menu">Menu</a>
